@@ -1,0 +1,61 @@
+/**
+* Wordfind.js 0.0.1
+* (c) 2012 Bill, BunKat LLC.
+* Wordfind is freely distributable under the MIT license.
+* For all details and documentation:
+*     http://github.com/bunkat/wordfind
+*/
+*{margin: 0;}		
+		body, html {height:100%; width:100%; margin: 0px;}
+		body { 
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		  	background: url("fondo.jpg") no-repeat fixed center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;				
+			font-family:Arial, Helvetica Neue, Helvetica, sans-serif; 
+			overflow: auto;
+		}	
+.cuerpo {width: 80%; position: absolute;}
+p {
+  font: 13pt sans-serif;
+  margin: 20px 20px 0px 20px;
+}
+#puzzle {border: 1px solid black; padding: 20px; float: left; margin: 32px 23px 8px 184px; font-size: 20px;}
+#puzzle div {width: 100%; margin: 0 auto;}
+
+#puzzle .puzzleSquare {height: 29px;  width: 29px; text-transform: uppercase;  background-color: #ffffffa6;  border: 0; font: 1em sans-serif; color: #000;}
+button::-moz-focus-inner {border: 0;}
+#puzzle .selected { background-color: #D3D3D3;}
+
+#puzzle .found {background-color: #61C1A2; color: white;}
+
+#puzzle .solved {background-color: purple;  color: white;}
+
+#puzzle .complete {background-color: #e8db49;/*background-image: url(../images/enfermo.png);*/}
+
+#words { float: left; margin-top: 15%; color: aliceblue; text-align: center;background-color: #e8db49;padding: 17px 41px 24px 10px;}
+
+#words ul { list-style-type: none;}
+#words li { padding: 3px 0; font: 1em sans-serif; color: #402323;}
+#words .wordFound { text-decoration: line-through;  color: gray;}
+#solve {  margin: 0 30px;}
+.instru{color: #FFFFFF; text-align: center; padding: 25px 20px; font-style: italic; font-size: 18px;}
+
+
+
+/*<!--@media all and (max-width: 1025px){
+	.cuerpo{width: 60%; margin-left: 20%; background-color: aqua} 
+	#puzzle .puzzleSquare {height: 26px; width: 25px;}
+}
+@media all and (max-width: 950px){.cuerpo{width: 100%; margin-left: 0%; background-color: rgba(235,0,3,1.00)}}
+@media all and (max-width: 550px){.cuerpo{margin-left: 0;} #words{float: none;} #puzzle .puzzleSquare {height: 24px; width: 25px;}}-->*/
+
+@media all and (max-width: 1200px){.cuerpo{width: 100%;}}
+@media all and (max-width: 950px){.cuerpo{width: 100%; margin-left: 0%;}}
+@media all and (max-width: 620px){#puzzle{margin: 0;} #puzzle .puzzleSquare {height: 28px; width: 21px; font: 0.8em sans-serif;}}
+@media all and (max-width: 450px){#puzzle .puzzleSquare {height: 31px; width: 17px; font: 0.6em sans-serif;}#words {margin: 0;}#words ul {font-size: 4vw;}}
+/* @media all and (max-width: 370px){#puzzle .puzzleSquare {height: 33px; width: 13px; font: 0.4em sans-serif;}} */

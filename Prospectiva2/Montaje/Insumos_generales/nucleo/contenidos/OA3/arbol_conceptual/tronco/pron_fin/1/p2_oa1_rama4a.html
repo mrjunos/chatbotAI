@@ -1,0 +1,179 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Prospectiva 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Arctext.js - Curving text with CSS3 and jQuery" />
+        <meta name="keywords" content="arc, letters, words, rotate, warp, circle, curve, along, path, jquery, css3, transform" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat|Sail|Concert+One' rel='stylesheet' type='text/css' />
+<!----------------------------------------------------------------------------------------------------------------------------->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137831213-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137831213-2');
+</script>
+<!----------------------------------------------------------------------------------------------------------------------------->
+  </head>
+    <body>
+        <div class="container">
+			
+           
+			<header>
+				
+			
+				
+			</header>
+			<!--<section class="main">				
+				<div id="arc-wrapper" class="arc-wrapper">
+					<h3>Just &diams; bend &diams; your &diams; text</h3>
+					<h4>ABCDEFG</h4>
+				</div>
+			</section>-->
+			<img src="images/logo_prospectiva2.png" class="imagen_responsive" /> <BR><BR>
+		<!--	<div class="tit_cont">Presentación de los recursos </div>-->
+		
+		
+			<!------------------------------------------------------------------------>
+				
+												
+			<section class="sub" id="sub1">
+				
+			<h4>&iquest;Pron&oacute;sticos financieros?</h4><br>
+				
+				
+<p align="justify">Los pron&oacute;sticos financieros son  predicciones del  comportamiento  futuro de  las  empresas, normalmente a nivel de ingresos por ventas o ganancias  (rentabilidad). Se pueden realizar pron&oacute;sticos a corto,  medio  o largo plazo en circunstancias parecidas a las actuales o simular diferentes  contextos o entornos: crisis financiera, situaci&oacute;n de la empresa en el caso de  que se  realizasen determinadas inversiones o cambios importantes de log&iacute;stica o  producci&oacute;n, etc.</p>
+<p align="justify">Todos estos pron&oacute;sticos  empresariales tienen que ser coherentes entre s&iacute; y debes desarrollarlos  teniendo en cuenta los posibles escenarios econ&oacute;micos y pol&iacute;ticos. No hay una  f&oacute;rmula m&aacute;gica para acertar, pero lo m&aacute;s l&oacute;gico es que analices lo ocurrido en  el pasado.</p>
+
+				<div class="code">
+				<object type="text/html" id="Contenido" 
+				data="http://icontent.ceipa.edu.co/nucleos/posgrado/ECONOMETRIA/OA3/raiz_principal/1/E_PRO_AF_03-1.html" width="810" height="600"></object>				
+				</div>
+
+
+<p style="text-align: center;"><strong>Elaboraci&oacute;n de pron&oacute;sticos y presupuestos</strong></p>
+				
+	
+				<section class="sub" id="sub2">				
+		<div class="code">										
+				<div class="cont_iframe1">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/qBRmWw05sxM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p align="center">Videos FCA (17 de agosto, 2016). L.A.PYMES - Elaboraci&oacute;n de pron&oacute;sticos y presupuestos [Archivo  de video]. Recuperado de: <a href="https://www.youtube.com/watch?v=qBRmWw05sxM" target="_blank">https://www.youtube.com/watch?v=qBRmWw05sxM</a></p>
+				</div> 
+				</div>
+
+			</section>
+				
+
+<p>Si deseas conocer m&aacute;s al detalle, ingresa en estos enlaces:</p>
+		<div class="code">
+			
+<object type="text/html" id="Contenido2" 
+data="http://icontent.ceipa.edu.co/nucleos/posgrado/ECONOMETRIA/OA3/raiz_principal/2/E_PRO_AF_03-2.html" width="810" height="200"></object>				
+</div>
+			
+				<div class="code">
+<object type="text/html" id="Contenido3" 
+data="http://icontent.ceipa.edu.co/nucleos/posgrado/ECONOMETRIA/OA3/raiz_principal/3/E_PRO_AF_03-3.html" width="810" height="200"></object>				
+</div>
+
+				
+			
+				
+			</section>
+
+
+			
+			<div class="clr"></div>
+        </div>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.arctext.js"></script>
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			var $headline = $('#headline').hide();
+		
+			var $word1		= $('#arc-wrapper').find('h3').hide();
+			var $word2		= $('#arc-wrapper').find('h4').hide();
+			
+			var $example1	= $('#example1').hide();
+			var $example2	= $('#example2').hide();
+			var $example3	= $('#example3').hide();
+			var $example4	= $('#example4').hide();
+			
+			google.load('webfont','1');
+			
+			google.setOnLoadCallback(function() {
+				WebFont.load({
+					google		: {
+						families	: ['Montserrat','Concert One']
+					},
+					fontactive	: function(fontFamily, fontDescription) {
+						init();
+					},
+					fontinactive	: function(fontFamily, fontDescription) {
+						init();
+					}
+				});
+			});
+			
+			function init() {
+			
+				$headline.show().arctext({radius: 400});
+					
+				$word1.show().arctext();
+				$word2.show().arctext({radius: 148, dir: -1});
+				
+				$example1.show().arctext({radius: 300});
+				$example2.show().arctext({radius: 400, dir: -1});
+				$example3.show().arctext({radius: 500, rotate: false});
+				$example4.show().arctext({radius: 300});
+				
+				$('#button_set').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 140,
+						dir			: -1
+					});
+					return false;
+				});
+				$('#button_anim1').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 300, 
+						dir			: -1,
+						animation	: {
+							speed	: 300,
+							easing  : 'ease-out'
+						}
+					});
+					return false;
+				});
+				$('#button_anim2').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 200, 
+						dir			: 1, 
+						animation	: {
+							speed	: 300
+						}
+					});
+					return false;
+				});
+				$('#button_reset').on('click', function() {
+					$example4.arctext('set', {
+						radius		: 300, 
+						dir			: 1
+					});
+					return false;
+				});
+			
+			};
+		</script/>
+    </body>
+</html>
